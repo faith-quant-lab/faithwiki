@@ -13,9 +13,7 @@ We filter Wikipedia articles to a smaller subset that relates to the Christian f
 * create function to classify if the article contains certain Christian-faith related words.
 * upon consulting various Christianity keyword lists, finalize on the words: ['Jesus', 'Christ ', 'Christianity', 'God', 'salvation', 'theology']
 * Form flag code: start with 1, followed by 1's and 0's to encode whether the document contains the words 'Jesus' (code=1) or not (code=0), then for 'Christ ', ...
-
-** e.g. The code '1000101' means the file contains the words 'God', 'theology' but not 'Jesus', 'Christ ', 'Christianity', nor 'salvation'
-
+* e.g. The code '1000101' means the file contains the words 'God', 'theology' but not 'Jesus', 'Christ ', 'Christianity', nor 'salvation'
 * goes through the entire wiki plain-text-file, classify each article, so that we can collect statistics on the article distributions.
 * based on the statistics, decide to filter out articles with codes '1000000' (totally without any faith words), '1000100' (containing only 'God' but not the other five). What remains are potential faith related articles that contains at least one of the words 'Jesus', 'Christ ', 'Christianity', 'salvation', 'theology'
 * the result is 2% of the original wiki articles
