@@ -25,3 +25,9 @@ We filter Wikipedia articles to a smaller subset that relates to the Christian f
 * above file format is still the same as the WikiParser output format, and thus can be read with our WikiFileReader
 * wiki_articles_christian2_tail.txt : the last 50 lines of the 300MB zip file, can also be accessed by WikiFileReader for debugging
 * wiki_titles_christian2_code.txt : each line represents the title of an article in the 300MB file, preceeded by the article flagcode. The number of lines in this file should match the number of articles in the 300MB zip file.
+
+## Future use of WikiFileReader
+
+* The class WikiFile offers a reader stream for Wiki-Parser-formated files, including the output of our process.
+* The clean_article() method can perform standard cleaning for Wiki article text.
+* The flag-code title file, indicating what keywords an article contains, offers insightful statistics about the article collection.
