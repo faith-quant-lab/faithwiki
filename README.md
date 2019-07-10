@@ -31,3 +31,7 @@ We filter Wikipedia articles to a smaller subset that relates to the Christian f
 * The class WikiFile offers a reader stream for Wiki-Parser-formated files, including the output of our process.
 * The clean_article() method can perform standard cleaning for Wiki article text.
 * The flag-code title file, indicating what keywords an article contains, offers insightful statistics about the article collection.
+
+### WikiFileColabReader.ipynb
+
+* Example of how to save the 300MB gzipped archive file to G-Drive, and then call from Colab to ungzip and process the archive.
